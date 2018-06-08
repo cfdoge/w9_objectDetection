@@ -7,4 +7,4 @@ os.chdir(w_d)
 
 for l in os.popen('/bin/bash -c "cd {0} && source ./run.sh"'.format(w_d)):
     print(l.strip())
-    
+
