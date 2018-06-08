@@ -10,7 +10,7 @@ echo current dir is $PWD
 export PYTHONPATH=$PYTHONPATH:$DIR:$DIR/slim:$DIR/object_detection
 
 # 定义各目录
-output_dir=/tinysrc  # 训练目录
+output_dir=/output  # 训练目录
 dataset_dir=/tinysrc/fxfviolet/w9-object-detection-pet-train
 
 train_dir=$output_dir/train
@@ -19,7 +19,7 @@ eval_dir=$output_dir/eval
 
 # config文件
 config=ssd_mobilenet_v1_week9.config
-pipeline_config_path=$output_dir/$config
+pipeline_config_path=/tinysrc/$config
 
 # 先清空输出目录，本地运行会有效果，tinymind上运行这一行没有任何效果
 # tinymind已经支持引用上一次的运行结果，这一行需要删掉，不然会出现上一次的运行结果被清空的状况。
