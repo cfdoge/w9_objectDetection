@@ -11,7 +11,7 @@ export PYTHONPATH=$PYTHONPATH:$DIR:$DIR/slim:$DIR/object_detection
 
 # 定义各目录
 output_dir=/output  # 训练目录
-dataset_dir=/tinysrc/fxfviolet/w9-object-detection-pet-train
+dataset_dir=/fxfviolet/w9-object-detection-pet-train
 
 train_dir=$output_dir/train
 checkpoint_dir=$train_dir
